@@ -29,7 +29,7 @@ public class Main {
         {
             try
             {
-                System.out.print("Choose what you want to do(To display the menu, press 0 or 5 if you want to exit): ");
+                System.out.print("Choose what you want to do(To display the menu, press 0 or 9 if you want to exit): ");
                 userChoice = sc.nextInt();
             } catch (java.util.InputMismatchException e)
             {
@@ -69,19 +69,19 @@ public class Main {
                 int[] userArray = getUserNumbers();
                 System.out.println("Result of exponentiation is: " + calc.exponentiation(userArray[0], userArray[1]));
             }
-            else if (userChoice == 9 )
-            {
-                System.out.println("You exited the program");
-            }
+
             else if (userChoice == 0)
             {
                 menu();
             }
             else
             {
-                System.out.println("There is no such option");
+                if (userChoice != 9)
+                {
+                    System.out.println("There is no such option");
+                }
             }
-        } while (userChoice != 5);
+        } while (userChoice != 9);
 
     }
 
