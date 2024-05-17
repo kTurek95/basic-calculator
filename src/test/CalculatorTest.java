@@ -8,8 +8,6 @@ import static org.junit.Assert.assertEquals;
  * This class contains tests for the Calculator class, testing its ability to perform basic arithmetic operations.
  */
 public class CalculatorTest {
-
-    // Instance of Calculator to be used in the tests
     Calculator calculator = new Calculator();
 
     /**
@@ -18,8 +16,8 @@ public class CalculatorTest {
      */
     @Test
     public void testAdd() {
-        int result = calculator.add(4, 6);
-        assertEquals(10, result);
+        double result = calculator.add(4, 6);
+        assertEquals(10, result, 0.1);
     }
 
     /**
@@ -28,8 +26,8 @@ public class CalculatorTest {
      */
     @Test
     public void testSubtract() {
-        int result = calculator.subtract(10, 2);
-        assertEquals(8, result);
+        double result = calculator.subtract(10, 2);
+        assertEquals(8, result, 0.1);
     }
 
     /**
@@ -38,8 +36,8 @@ public class CalculatorTest {
      */
     @Test
     public void testNegativeSubtract() {
-        int result = calculator.subtract(2, 10);
-        assertEquals(-8, result);
+        double result = calculator.subtract(2, 10);
+        assertEquals(-8, result, 0.1);
     }
 
     /**
@@ -48,8 +46,8 @@ public class CalculatorTest {
      */
     @Test
     public void testMultiply() {
-        int result = calculator.multiply(5, 10);
-        assertEquals(50, result);
+        double result = calculator.multiply(5, 10);
+        assertEquals(50, result, 0.1);
     }
 
     /**

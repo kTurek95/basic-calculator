@@ -6,25 +6,25 @@ import java.lang.Math;
  */
 public class Calculator {
     /**
-     * Adds two integers.
+     * Adds two doubles.
      *
-     * @param value1 The first integer to be added.
-     * @param value2 The second integer to be added.
+     * @param value1 The first double to be added.
+     * @param value2 The second double to be added.
      * @return The sum of value1 and value2.
      */
-    public int add(int value1, int value2)
+    public double add(double value1, double value2)
     {
         return value1 + value2;
     }
 
     /**
-     * Subtracts the second integer from the first.
+     * Subtracts the second double from the first.
      *
-     * @param value1 The integer from which value2 will be subtracted.
-     * @param value2 The integer to subtract from value1.
+     * @param value1 The double from which value2 will be subtracted.
+     * @param value2 The double to subtract from value1.
      * @return The difference between value1 and value2.
      */
-    public int subtract(int value1, int value2)
+    public double subtract(double value1, double value2)
     {
         if (value2 > value1)
         {
@@ -34,13 +34,13 @@ public class Calculator {
     }
 
     /**
-     * Multiplies two integers.
+     * Multiplies two doubles.
      *
-     * @param value1 The first integer to multiply.
-     * @param value2 The second integer to multiply.
+     * @param value1 The first double to multiply.
+     * @param value2 The second double to multiply.
      * @return The product of value1 and value2.
      */
-    public int multiply(int value1, int value2)
+    public double multiply(double value1, double value2)
     {
         return value1 * value2;
     }
@@ -64,13 +64,13 @@ public class Calculator {
     }
 
     /**
-     * Raises the first integer to the power of the second integer using exponentiation.
+     * Raises the first double to the power of the second double using exponentiation.
      *
      * @param value1 The base.
      * @param value2 The exponent.
      * @return value1 raised to the power of value2.
      */
-    public double exponentiation(int value1, int value2)
+    public double exponentiation(double value1, double value2)
     {
         return Math.pow(value1, value2);
     }
