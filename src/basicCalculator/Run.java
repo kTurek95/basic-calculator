@@ -4,6 +4,8 @@ import test.MainTest;
 import java.io.IOException;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
+
+import javax.swing.*;
 import java.io.FileWriter;
 import java.util.Scanner;
 
@@ -37,7 +39,12 @@ public class Run {
                 myFile.close();
             } else if (args[0].equals("menu"))
             {
-                Main.main(args);
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        new SwingUI().setVisible(true);
+                    }
+                });
             }
             else
             {
